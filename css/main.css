@@ -13,10 +13,11 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .locations {
-  background: #FFF5F6;
+  background: linear-gradient(to bottom, #FFF 21%, #FFF5F6 21%, #FFF5F6 75%);
 }
 
 .visually-hidden {

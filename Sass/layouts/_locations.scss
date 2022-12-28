@@ -16,11 +16,16 @@ a {
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .locations{
-    background: variables.$backgroundNeutralColor;
-}
+    background: linear-gradient( 
+        to bottom, 
+        variables.$backgroundInverseColor 21%,
+        variables.$backgroundNeutralColor 21%,
+        variables.$backgroundNeutralColor 75%);
+} 
 .visually-hidden{
     position: absolute;
     width: 1px;
