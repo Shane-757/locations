@@ -99,10 +99,13 @@ a {
   font-size: 12px;
   line-height: 18px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E5E5E5;
+  color: #907E82;
+  width: 160px;
+  margin: 0;
 }
 
 .locations__weekdays {
+  border-top: 1px solid #E5E5E5;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -206,23 +209,122 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .locations__info {
-    max-width: 224px;
+  .locations {
+    background: linear-gradient(to bottom, #FFF 45%, #FFF5F6 45%, #FFF5F6 50%);
   }
   .locations__conatiner {
+    margin: 80px 16px 60px 16px;
     display: flex;
+    justify-content: center;
+  }
+  .locations__info {
+    max-width: 224px;
+    margin: 0;
+  }
+  .locations__info:not(:last-child) {
+    margin: 0 32px 0 0;
+  }
+  .locations__type-cafe {
+    font-size: 16px;
+    padding: 10px 0px 10px 15px;
+    width: 73px;
+    height: 28px;
+  }
+  .locations__type-foodtruck {
+    font-size: 16px;
+    width: 138px;
+    height: 28px;
+    padding: 10px 0px 10px 15px;
+  }
+  .locations__city {
+    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  .locations__text {
+    width: 140px;
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+  .locations__weekdays {
+    font-size: 14px;
+    padding-top: 32px;
+  }
+  .locations__weekdays-times {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+  .locations__weekends {
+    font-size: 14px;
+  }
+  .locations__weekends-times {
+    font-size: 14px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .locations__contact-item {
+    font-size: 14px;
   }
   .locations__button-section {
     flex-direction: row;
-    width: 330px;
+    justify-content: center;
   }
   .locations__button-our {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 15px;
+    margin: 0 0 40px 0;
+    padding: 15px 40px 15px 30px;
   }
   .locations__button-franchise {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 0 40px 14px;
+    padding: 15px 42px 15px 38px;
+  }
+  .send-icon-our {
+    margin-left: 14px;
+  }
+  .send-icon-franchise {
+    margin-left: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .locations {
+    background: linear-gradient(to bottom, #FFF 15%, #FFF5F6 15%, #FFF5F6 85%);
+  }
+  .locations__conatiner {
+    margin: 120px 16px 60px 16px;
+  }
+  .locations__info {
+    min-width: 368px;
+    padding: 40px;
+  }
+  .locations__info-truck {
+    margin: 0;
+  }
+  .locations__text {
+    width: 210px;
+    font-size: 16px;
+  }
+  .locations__city {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .locations__weekdays {
+    font-size: 16px;
+  }
+  .locations__weekdays-times {
+    font-size: 16px;
+  }
+  .locations__weekends {
+    font-size: 16px;
+  }
+  .locations__weekends-times {
+    font-size: 16px;
+  }
+  .locations__contact-item {
+    font-size: 16px;
+  }
+  .locations__button-our {
+    padding-left: 35px;
+  }
+  .locations__button-franchise {
+    padding-left: 36px;
   }
 }
