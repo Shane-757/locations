@@ -18,3 +18,190 @@ a {
     box-sizing: border-box;
 }
 
+.locations{
+    background: variables.$backgroundNeutralColor;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.locations__conatiner{
+    margin: 60px 20px 32px 20px;
+}
+
+.locations__info{
+    background: variables.$backgroundInverseColor;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+}
+
+.locations__info:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.locations__type-cafe{
+        background: variables.$backgroundSecondProductColor;
+        border-radius: 4px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: variables.$buttonInverseColor;
+        width: 80px;
+        height: 16px;
+        padding: 4px 24px 4px 24px;
+}
+
+.locations__type-foodtruck{
+        background: variables.$backgroundThirdProductColor;
+        border-radius: 4px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: variables.$buttonInverseColor;
+        width: 130px;
+        height:16px;
+        padding: 4px 27px 4px 27px;
+}
+
+.locations__city{
+    margin: 20px 0 8px 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: variables.$textPrimaryColor;
+}
+
+.locations__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 24px;
+   border-bottom: 1px solid variables.$backgroundLightColor;
+}
+
+.locations__weekdays{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: variables.$textPrimaryColor;
+        padding-top: 24px;
+}
+
+.locations__weekdays-times{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: variables.$textTertiaryColor;
+        padding-bottom: 8px;
+}
+
+.locations__weekends {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textPrimaryColor;
+}
+
+.locations__weekends-times {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textTertiaryColor;
+    padding-bottom: 24px;
+    border-bottom: 1px solid variables.$backgroundLightColor;
+    margin-bottom: 24px;
+}
+
+.locations__contact-item{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+}
+.locations__contact-item-link{
+    color: variables.$textSecondaryColor;
+}
+
+.locations__button-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations__button-our{
+    background: variables.$textAccentColor;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: variables.$backgroundInverseColor;
+        margin-bottom: 10px;
+        padding: 10px 20px 10px 17px;
+        border-style: none;
+}
+
+.locations__button-franchise {
+    background: variables.$backgroundInverseColor;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: variables.$textAccentColor;
+    margin-bottom: 10px;
+    padding: 10px 40px 10px 32px;
+    border-style: none;
+}
+.send-icon-our{
+    fill: variables.$buttonInverseColor;
+    margin-left: 8px;
+}
+
+.send-icon-franchise{
+    fill: variables.$textAccentColor;
+    margin-left: 8px;
+}
+
+
