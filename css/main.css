@@ -42,9 +42,7 @@ a {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
-}
-
-.locations__info:not(:last-child) {
+  max-width: 280px;
   margin-bottom: 20px;
 }
 
@@ -63,6 +61,7 @@ a {
   width: 80px;
   height: 16px;
   padding: 4px 24px 4px 24px;
+  margin: 0;
 }
 
 .locations__type-foodtruck {
@@ -81,6 +80,7 @@ a {
   width: 130px;
   height: 16px;
   padding: 4px 27px 4px 27px;
+  margin: 0;
 }
 
 .locations__city {
@@ -203,4 +203,26 @@ a {
 .send-icon-franchise {
   fill: #D41443;
   margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .locations__info {
+    max-width: 224px;
+  }
+  .locations__conatiner {
+    display: flex;
+  }
+  .locations__button-section {
+    flex-direction: row;
+    width: 330px;
+  }
+  .locations__button-our {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+  .locations__button-franchise {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
